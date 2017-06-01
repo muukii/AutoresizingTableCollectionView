@@ -1,0 +1,6 @@
+framework module Pods_AutosizingTableView {
+  umbrella header "Pods-AutosizingTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445CF152BA989EFFA445077A /* Pods_AutosizingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE5DD212C14BC2F954DED4F /* Pods_AutosizingTableView.framework */; };
+		4B62F67A1EDFCB10008F5F09 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F6791EDFCB10008F5F09 /* Model.swift */; };
+		4B62F67C1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F67B1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift */; };
+		4B62F67E1EDFE6EC008F5F09 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F67D1EDFE6EC008F5F09 /* TableViewCell.swift */; };
 		4B7568EA1EDFC4D90074321E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7568E91EDFC4D90074321E /* AppDelegate.swift */; };
-		4B7568EC1EDFC4D90074321E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7568EB1EDFC4D90074321E /* ViewController.swift */; };
+		4B7568EC1EDFC4D90074321E /* ViewSizeCalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7568EB1EDFC4D90074321E /* ViewSizeCalculatorTableViewController.swift */; };
 		4B7568EF1EDFC4D90074321E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7568ED1EDFC4D90074321E /* Main.storyboard */; };
 		4B7568F11EDFC4D90074321E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7568F01EDFC4D90074321E /* Assets.xcassets */; };
 		4B7568F41EDFC4D90074321E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7568F21EDFC4D90074321E /* LaunchScreen.storyboard */; };
+		4BE2382A1EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE238291EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift */; };
+		4BE2382C1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2382B1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift */; };
+		4BE2382E1EDFEB6E00D89441 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2382D1EDFEB6E00D89441 /* CollectionViewCell.swift */; };
+		4BE238301EDFEB7F00D89441 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE2382F1EDFEB7F00D89441 /* BodyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E81B7003DEC45C5AF1FFB51 /* Pods-AutosizingTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosizingTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutosizingTableView/Pods-AutosizingTableView.release.xcconfig"; sourceTree = "<group>"; };
+		4B62F6791EDFCB10008F5F09 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4B62F67B1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingTableViewViewController.swift; sourceTree = "<group>"; };
+		4B62F67D1EDFE6EC008F5F09 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4B7568E61EDFC4D90074321E /* AutosizingTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutosizingTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7568E91EDFC4D90074321E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B7568EB1EDFC4D90074321E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B7568EB1EDFC4D90074321E /* ViewSizeCalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizeCalculatorTableViewController.swift; sourceTree = "<group>"; };
 		4B7568EE1EDFC4D90074321E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B7568F01EDFC4D90074321E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B7568F31EDFC4D90074321E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B7568F51EDFC4D90074321E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE238291EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSizeCalculatorCollectionViewController.swift; sourceTree = "<group>"; };
+		4BE2382B1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingCollectionViewController.swift; sourceTree = "<group>"; };
+		4BE2382D1EDFEB6E00D89441 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		4BE2382F1EDFEB7F00D89441 /* BodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
+		5933334480E2AAB3D114C0EF /* Pods-AutosizingTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosizingTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutosizingTableView/Pods-AutosizingTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		DBE5DD212C14BC2F954DED4F /* Pods_AutosizingTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutosizingTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445CF152BA989EFFA445077A /* Pods_AutosizingTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		359AA62C74C8F3F92EE98427 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5933334480E2AAB3D114C0EF /* Pods-AutosizingTableView.debug.xcconfig */,
+				0E81B7003DEC45C5AF1FFB51 /* Pods-AutosizingTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4B7568DD1EDFC4D90074321E = {
 			isa = PBXGroup;
 			children = (
 				4B7568E81EDFC4D90074321E /* AutosizingTableView */,
 				4B7568E71EDFC4D90074321E /* Products */,
+				359AA62C74C8F3F92EE98427 /* Pods */,
+				5319BAF877B7D8270B31DC40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +85,28 @@
 			isa = PBXGroup;
 			children = (
 				4B7568E91EDFC4D90074321E /* AppDelegate.swift */,
-				4B7568EB1EDFC4D90074321E /* ViewController.swift */,
+				4BE2382F1EDFEB7F00D89441 /* BodyView.swift */,
+				4B62F67D1EDFE6EC008F5F09 /* TableViewCell.swift */,
+				4BE2382D1EDFEB6E00D89441 /* CollectionViewCell.swift */,
+				4B7568EB1EDFC4D90074321E /* ViewSizeCalculatorTableViewController.swift */,
+				4B62F67B1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift */,
+				4BE238291EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift */,
+				4BE2382B1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift */,
+				4B62F6791EDFCB10008F5F09 /* Model.swift */,
 				4B7568ED1EDFC4D90074321E /* Main.storyboard */,
 				4B7568F01EDFC4D90074321E /* Assets.xcassets */,
 				4B7568F21EDFC4D90074321E /* LaunchScreen.storyboard */,
 				4B7568F51EDFC4D90074321E /* Info.plist */,
 			);
 			path = AutosizingTableView;
+			sourceTree = "<group>";
+		};
+		5319BAF877B7D8270B31DC40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBE5DD212C14BC2F954DED4F /* Pods_AutosizingTableView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B7568F81EDFC4D90074321E /* Build configuration list for PBXNativeTarget "AutosizingTableView" */;
 			buildPhases = (
+				55DF0C7EBEF16E5A97F2B97A /* [CP] Check Pods Manifest.lock */,
 				4B7568E21EDFC4D90074321E /* Sources */,
 				4B7568E31EDFC4D90074321E /* Frameworks */,
 				4B7568E41EDFC4D90074321E /* Resources */,
+				281E27E7D67637B5BCA53601 /* [CP] Embed Pods Frameworks */,
+				068FBDAC6FEB2C9078B2174E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +179,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		068FBDAC6FEB2C9078B2174E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutosizingTableView/Pods-AutosizingTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		281E27E7D67637B5BCA53601 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutosizingTableView/Pods-AutosizingTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55DF0C7EBEF16E5A97F2B97A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B7568E21EDFC4D90074321E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B7568EC1EDFC4D90074321E /* ViewController.swift in Sources */,
+				4BE2382C1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift in Sources */,
+				4BE2382A1EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift in Sources */,
+				4BE238301EDFEB7F00D89441 /* BodyView.swift in Sources */,
+				4BE2382E1EDFEB6E00D89441 /* CollectionViewCell.swift in Sources */,
+				4B62F67A1EDFCB10008F5F09 /* Model.swift in Sources */,
+				4B62F67C1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift in Sources */,
+				4B62F67E1EDFE6EC008F5F09 /* TableViewCell.swift in Sources */,
+				4B7568EC1EDFC4D90074321E /* ViewSizeCalculatorTableViewController.swift in Sources */,
 				4B7568EA1EDFC4D90074321E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +361,7 @@
 		};
 		4B7568F91EDFC4D90074321E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5933334480E2AAB3D114C0EF /* Pods-AutosizingTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutosizingTableView/Info.plist;
@@ -270,6 +374,7 @@
 		};
 		4B7568FA1EDFC4D90074321E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E81B7003DEC45C5AF1FFB51 /* Pods-AutosizingTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutosizingTableView/Info.plist;
@@ -299,6 +404,7 @@
 				4B7568FA1EDFC4D90074321E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

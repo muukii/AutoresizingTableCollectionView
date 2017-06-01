@@ -1,0 +1,6 @@
+framework module ViewSizeCalculator {
+  umbrella header "ViewSizeCalculator-umbrella.h"
+
+  export *
+  module * { export * }
+}
