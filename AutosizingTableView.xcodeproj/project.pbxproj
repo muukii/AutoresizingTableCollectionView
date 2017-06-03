@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		445CF152BA989EFFA445077A /* Pods_AutosizingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE5DD212C14BC2F954DED4F /* Pods_AutosizingTableView.framework */; };
+		4B509BE21EE714030004B074 /* SystemSizeFittingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B509BE11EE714030004B074 /* SystemSizeFittingTableViewController.swift */; };
+		4B509BE41EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B509BE31EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift */; };
 		4B62F67A1EDFCB10008F5F09 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F6791EDFCB10008F5F09 /* Model.swift */; };
 		4B62F67C1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F67B1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift */; };
 		4B62F67E1EDFE6EC008F5F09 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F67D1EDFE6EC008F5F09 /* TableViewCell.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		0E81B7003DEC45C5AF1FFB51 /* Pods-AutosizingTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosizingTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutosizingTableView/Pods-AutosizingTableView.release.xcconfig"; sourceTree = "<group>"; };
+		4B509BE11EE714030004B074 /* SystemSizeFittingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSizeFittingTableViewController.swift; sourceTree = "<group>"; };
+		4B509BE31EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSizeFittingCollectionViewController.swift; sourceTree = "<group>"; };
 		4B62F6791EDFCB10008F5F09 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4B62F67B1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingTableViewViewController.swift; sourceTree = "<group>"; };
 		4B62F67D1EDFE6EC008F5F09 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -88,8 +92,10 @@
 				4BE2382F1EDFEB7F00D89441 /* BodyView.swift */,
 				4B62F67D1EDFE6EC008F5F09 /* TableViewCell.swift */,
 				4BE2382D1EDFEB6E00D89441 /* CollectionViewCell.swift */,
+				4B509BE11EE714030004B074 /* SystemSizeFittingTableViewController.swift */,
 				4B7568EB1EDFC4D90074321E /* ViewSizeCalculatorTableViewController.swift */,
 				4B62F67B1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift */,
+				4B509BE31EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift */,
 				4BE238291EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift */,
 				4BE2382B1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift */,
 				4B62F6791EDFCB10008F5F09 /* Model.swift */,
@@ -144,6 +150,7 @@
 				TargetAttributes = {
 					4B7568E51EDFC4D90074321E = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KU2QEJ9K3Z;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -233,12 +240,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE2382C1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift in Sources */,
+				4B509BE21EE714030004B074 /* SystemSizeFittingTableViewController.swift in Sources */,
 				4BE2382A1EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift in Sources */,
 				4BE238301EDFEB7F00D89441 /* BodyView.swift in Sources */,
 				4BE2382E1EDFEB6E00D89441 /* CollectionViewCell.swift in Sources */,
 				4B62F67A1EDFCB10008F5F09 /* Model.swift in Sources */,
 				4B62F67C1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift in Sources */,
 				4B62F67E1EDFE6EC008F5F09 /* TableViewCell.swift in Sources */,
+				4B509BE41EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift in Sources */,
 				4B7568EC1EDFC4D90074321E /* ViewSizeCalculatorTableViewController.swift in Sources */,
 				4B7568EA1EDFC4D90074321E /* AppDelegate.swift in Sources */,
 			);
@@ -364,6 +373,7 @@
 			baseConfigurationReference = 5933334480E2AAB3D114C0EF /* Pods-AutosizingTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
 				INFOPLIST_FILE = AutosizingTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.AutosizingTableView;
@@ -377,6 +387,7 @@
 			baseConfigurationReference = 0E81B7003DEC45C5AF1FFB51 /* Pods-AutosizingTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KU2QEJ9K3Z;
 				INFOPLIST_FILE = AutosizingTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.muukii.AutosizingTableView;
