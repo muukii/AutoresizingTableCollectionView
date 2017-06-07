@@ -67,8 +67,8 @@ final class SystemSizeFittingCollectionViewController: UIViewController, UIColle
     
     let size = sizingCell.contentView.systemLayoutSizeFitting(
       targetSize,
-      withHorizontalFittingPriority: UILayoutPriorityRequired,
-      verticalFittingPriority: UILayoutPriorityFittingSizeLevel
+      withHorizontalFittingPriority: .required,
+      verticalFittingPriority: .fittingSizeLevel
     )
     
     return size

@@ -52,8 +52,6 @@ class ViewSizeCalculatorTableViewController: UIViewController, UITableViewDataSo
       cell.set(model: model)
     }
     
-    print(size)
-    
     return size.height
   }
 }

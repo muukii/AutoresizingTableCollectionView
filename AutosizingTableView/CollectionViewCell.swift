@@ -28,8 +28,8 @@ final class CollectionViewCell: UICollectionViewCell {
     __valueLabel.font = UIFont.systemFont(ofSize: 14)
     __button.setTitle("Badge", for: .normal)
     
-    __titleLabel.setContentCompressionResistancePriority(900, for: .horizontal)
-    __button.setContentCompressionResistancePriority(900, for: .horizontal)
+    __titleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+    __button.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
     
     __titleLabel <- [
       Left(16),
@@ -70,8 +70,8 @@ final class CollectionViewCell: UICollectionViewCell {
     let targetSize = CGSize(width: width, height: UILayoutFittingCompressedSize.height)
     
     let size = contentView.systemLayoutSizeFitting(
-      targetSize, withHorizontalFittingPriority: UILayoutPriorityRequired,
-      verticalFittingPriority: UILayoutPriorityFittingSizeLevel
+      targetSize, withHorizontalFittingPriority: .required,
+      verticalFittingPriority: .fittingSizeLevel
     )
     
     layoutAttributes.frame.size = size

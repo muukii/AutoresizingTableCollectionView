@@ -23,17 +23,17 @@
 import UIKit
 
 public struct ViewSizeCalculator<T: UIView> {
-
+  
   public let sourceView: T
   public let calculateTargetView: UIView
   public let cache: NSCache<NSString, NSValue> = NSCache<NSString, NSValue>()
-
+  
   public init(sourceView: T, calculateTargetView: (T) -> UIView) {
-
+    
     self.sourceView = sourceView
     self.calculateTargetView = calculateTargetView(sourceView)
   }
-
+  
   public func calculate(
     width: CGFloat?,
     height: CGFloat?,
@@ -41,21 +41,21 @@ public struct ViewSizeCalculator<T: UIView> {
     closure: (T) -> Void) -> CGSize {
     
     let combinedCacheKey = cacheKey.map({ $0 + "|" + "\(String(describing: width)):\(String(describing: height))" })
-
+    
     if let combinedCacheKey = combinedCacheKey {
       if let size = cache.object(forKey: combinedCacheKey as NSString)?.cgSizeValue {
         return size
       }
     }
-
+    
     closure(sourceView)
     
     let targetSize = CGSize(width: width ?? UILayoutFittingCompressedSize.width, height: height ?? UILayoutFittingCompressedSize.height)
     let horizontalPriority = width == nil ? UILayoutPriorityFittingSizeLevel : UILayoutPriorityRequired
     let verticalPriority = height == nil ? UILayoutPriorityFittingSizeLevel : UILayoutPriorityRequired
-
+    
     let size = calculateTargetView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: horizontalPriority, verticalFittingPriority: verticalPriority)
-
+    
     if let combinedCacheKey = combinedCacheKey {
       cache.setObject(NSValue(cgSize: size), forKey: combinedCacheKey as NSString)
     }

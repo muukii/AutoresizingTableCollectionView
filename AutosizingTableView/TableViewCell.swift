@@ -29,9 +29,9 @@ final class TableViewCell: UITableViewCell {
     __valueLabel.font = UIFont.systemFont(ofSize: 14)
     __button.setTitle("Badge", for: .normal)
     
-    __titleLabel.setContentCompressionResistancePriority(900, for: .horizontal)
-    __button.setContentCompressionResistancePriority(900, for: .horizontal)
-    
+    __titleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+    __button.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+          
     __titleLabel <- [
       Left(16),
       Top(16),
