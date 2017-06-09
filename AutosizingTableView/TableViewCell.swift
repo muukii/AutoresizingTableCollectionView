@@ -12,43 +12,15 @@ import EasyPeasy
 
 final class TableViewCell: UITableViewCell {
   
-  private let __titleLabel = UILabel()
-  private let __valueLabel = UILabel()
-  private let __button = UIButton(type: .system)
+  private let bodyView = BodyView()
   
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
-    __titleLabel.numberOfLines = 1
-    __valueLabel.numberOfLines = 0
     
-    contentView.addSubview(__titleLabel)
-    contentView.addSubview(__valueLabel)
-    contentView.addSubview(__button)
+    contentView.addSubview(bodyView)
     
-    __titleLabel.font = UIFont.systemFont(ofSize: 12)
-    __valueLabel.font = UIFont.systemFont(ofSize: 14)
-    __button.setTitle("Badge", for: .normal)
+    bodyView <- Edges()
     
-    __titleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
-    __button.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
-          
-    __titleLabel <- [
-      Left(16),
-      Top(16),
-      Bottom(<=16),
-    ]
-    
-    __button <- [
-      Center(),
-      Left(8).to(__titleLabel, .right)
-    ]
-    
-    __valueLabel <- [
-      Top(16),
-      Right(16),
-      Bottom(16),
-      Left(8).to(__button, .right),
-    ]
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -56,8 +28,7 @@ final class TableViewCell: UITableViewCell {
   }
   
   func set(model: Model) {
-    __titleLabel.text = model.title
-    __valueLabel.text = model.body
+    bodyView.set(model: model)
   }
   
 }

@@ -11,43 +11,14 @@ import EasyPeasy
 
 final class CollectionViewCell: UICollectionViewCell {
   
-  private let __titleLabel = UILabel()
-  private let __valueLabel = UILabel()
-  private let __button = UIButton(type: .system)
+  private let bodyView = BodyView()
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    __titleLabel.numberOfLines = 1
-    __valueLabel.numberOfLines = 0
     
-    contentView.addSubview(__titleLabel)
-    contentView.addSubview(__valueLabel)
-    contentView.addSubview(__button)
+    contentView.addSubview(bodyView)
     
-    __titleLabel.font = UIFont.systemFont(ofSize: 12)
-    __valueLabel.font = UIFont.systemFont(ofSize: 14)
-    __button.setTitle("Badge", for: .normal)
-    
-    __titleLabel.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
-    __button.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
-    
-    __titleLabel <- [
-      Left(16),
-      Top(16),
-      Bottom(<=16),
-    ]
-    
-    __button <- [
-      Center(),
-      Left(8).to(__titleLabel, .right)
-    ]
-    
-    __valueLabel <- [
-      Top(16),
-      Right(16),
-      Bottom(16),
-      Left(8).to(__button, .right),
-    ]
+    bodyView <- Edges()
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -57,8 +28,7 @@ final class CollectionViewCell: UICollectionViewCell {
   var maxWidth: CGFloat?
   
   func set(model: Model) {
-    __titleLabel.text = model.title
-    __valueLabel.text = model.body
+    bodyView.set(model: model)
   }
   
   override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
