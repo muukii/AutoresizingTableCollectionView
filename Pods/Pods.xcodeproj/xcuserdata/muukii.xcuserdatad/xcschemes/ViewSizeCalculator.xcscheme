@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D0D573A964BEDC5568F3118CE845B426'
+               BlueprintIdentifier = 'A2F63659ABAC6650A5B33F0BF62F7FAB'
                BlueprintName = 'ViewSizeCalculator'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ViewSizeCalculator.framework'>

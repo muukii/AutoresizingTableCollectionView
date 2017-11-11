@@ -8,6 +8,8 @@ target 'AutosizingTableView' do
   pod 'ViewSizeCalculator'
   pod 'EasyPeasy'
   pod 'Reveal-SDK'
+  pod 'FlexLayout'
+  pod 'PinLayout'
   # Pods for AutosizingTableView
 
 end

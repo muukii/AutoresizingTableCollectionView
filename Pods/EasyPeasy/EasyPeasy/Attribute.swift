@@ -210,7 +210,15 @@ open class Attribute {
         )
         
         // Set priority
-        layoutConstraint.priority = self.priority.layoutPriority()
+        #if swift(>=4.0)
+            #if os(iOS) || os(tvOS)
+                layoutConstraint.priority = UILayoutPriority(rawValue: self.priority.layoutPriority())
+            #else
+                layoutConstraint.priority = NSLayoutConstraint.Priority(rawValue: self.priority.layoutPriority())
+            #endif
+        #else
+            layoutConstraint.priority = self.priority.layoutPriority()
+        #endif
         
         // Reference resulting constraint
         self.layoutConstraint = layoutConstraint

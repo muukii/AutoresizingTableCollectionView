@@ -10,6 +10,7 @@
 		445CF152BA989EFFA445077A /* Pods_AutosizingTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE5DD212C14BC2F954DED4F /* Pods_AutosizingTableView.framework */; };
 		4B509BE21EE714030004B074 /* SystemSizeFittingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B509BE11EE714030004B074 /* SystemSizeFittingTableViewController.swift */; };
 		4B509BE41EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B509BE31EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift */; };
+		4B557CC21FB76BF000412D0C /* FlexLayoutCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B557CC11FB76BF000412D0C /* FlexLayoutCollectionViewController.swift */; };
 		4B62F67A1EDFCB10008F5F09 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F6791EDFCB10008F5F09 /* Model.swift */; };
 		4B62F67C1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F67B1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift */; };
 		4B62F67E1EDFE6EC008F5F09 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62F67D1EDFE6EC008F5F09 /* TableViewCell.swift */; };
@@ -28,6 +29,7 @@
 		0E81B7003DEC45C5AF1FFB51 /* Pods-AutosizingTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutosizingTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutosizingTableView/Pods-AutosizingTableView.release.xcconfig"; sourceTree = "<group>"; };
 		4B509BE11EE714030004B074 /* SystemSizeFittingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSizeFittingTableViewController.swift; sourceTree = "<group>"; };
 		4B509BE31EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSizeFittingCollectionViewController.swift; sourceTree = "<group>"; };
+		4B557CC11FB76BF000412D0C /* FlexLayoutCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexLayoutCollectionViewController.swift; sourceTree = "<group>"; };
 		4B62F6791EDFCB10008F5F09 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4B62F67B1EDFE6E1008F5F09 /* SelfSizingTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingTableViewViewController.swift; sourceTree = "<group>"; };
 		4B62F67D1EDFE6EC008F5F09 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				4B509BE31EE7143D0004B074 /* SystemSizeFittingCollectionViewController.swift */,
 				4BE238291EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift */,
 				4BE2382B1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift */,
+				4B557CC11FB76BF000412D0C /* FlexLayoutCollectionViewController.swift */,
 				4B62F6791EDFCB10008F5F09 /* Model.swift */,
 				4B7568ED1EDFC4D90074321E /* Main.storyboard */,
 				4B7568F01EDFC4D90074321E /* Assets.xcassets */,
@@ -208,9 +211,24 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AutosizingTableView/Pods-AutosizingTableView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/FlexLayout/FlexLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-11/iOS/RevealServer.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewSizeCalculator/ViewSizeCalculator.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/YogaKit/YogaKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewSizeCalculator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YogaKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -223,13 +241,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutosizingTableView-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -242,6 +263,7 @@
 				4BE2382C1EDFEADD00D89441 /* SelfSizingCollectionViewController.swift in Sources */,
 				4B509BE21EE714030004B074 /* SystemSizeFittingTableViewController.swift in Sources */,
 				4BE2382A1EDFEACA00D89441 /* ViewSizeCalculatorCollectionViewController.swift in Sources */,
+				4B557CC21FB76BF000412D0C /* FlexLayoutCollectionViewController.swift in Sources */,
 				4BE238301EDFEB7F00D89441 /* BodyView.swift in Sources */,
 				4BE2382E1EDFEB6E00D89441 /* CollectionViewCell.swift in Sources */,
 				4B62F67A1EDFCB10008F5F09 /* Model.swift in Sources */,

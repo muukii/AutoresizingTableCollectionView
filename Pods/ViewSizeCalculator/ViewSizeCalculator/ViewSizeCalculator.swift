@@ -22,7 +22,7 @@
 
 import UIKit
 
-public struct ViewSizeCalculator<T: UIView> {
+public struct ViewSizeCalculator<T : UIView> {
   
   public let sourceView: T
   public let calculateTargetView: UIView
@@ -50,11 +50,18 @@ public struct ViewSizeCalculator<T: UIView> {
     
     closure(sourceView)
     
-    let targetSize = CGSize(width: width ?? UILayoutFittingCompressedSize.width, height: height ?? UILayoutFittingCompressedSize.height)
-    let horizontalPriority = width == nil ? UILayoutPriorityFittingSizeLevel : UILayoutPriorityRequired
-    let verticalPriority = height == nil ? UILayoutPriorityFittingSizeLevel : UILayoutPriorityRequired
+    let targetSize = CGSize(
+      width: width ?? UILayoutFittingCompressedSize.width,
+      height: height ?? UILayoutFittingCompressedSize.height
+    )
+    let horizontalPriority: UILayoutPriority = width == nil ? .fittingSizeLevel : .required
+    let verticalPriority: UILayoutPriority = height == nil ? .fittingSizeLevel : .required
     
-    let size = calculateTargetView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: horizontalPriority, verticalFittingPriority: verticalPriority)
+    let size = calculateTargetView.systemLayoutSizeFitting(
+      targetSize,
+      withHorizontalFittingPriority: horizontalPriority,
+      verticalFittingPriority: verticalPriority
+    )
     
     if let combinedCacheKey = combinedCacheKey {
       cache.setObject(NSValue(cgSize: size), forKey: combinedCacheKey as NSString)

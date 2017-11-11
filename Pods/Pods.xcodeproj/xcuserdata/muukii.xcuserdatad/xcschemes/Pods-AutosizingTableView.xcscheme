@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5DD45B8FD28A1433ECCCBE8D6DA41A36"
+               BlueprintIdentifier = "00BE59BBA17FA0E915C6D319ED3E628A"
                BuildableName = "Pods_AutosizingTableView.framework"
                BlueprintName = "Pods-AutosizingTableView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5DD45B8FD28A1433ECCCBE8D6DA41A36"
+            BlueprintIdentifier = "00BE59BBA17FA0E915C6D319ED3E628A"
             BuildableName = "Pods_AutosizingTableView.framework"
             BlueprintName = "Pods-AutosizingTableView"
             ReferencedContainer = "container:Pods.xcodeproj">
